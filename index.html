@@ -22,7 +22,6 @@
         },
       }
     </script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="importmap">
 {
   "imports": {
@@ -37,7 +36,7 @@
 </head>
   <body class="bg-gray-50 dark:bg-gray-900">
     <div id="root"></div>
-    <script type="text/babel" data-type="module" src="/index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
@@ -49,6 +48,5 @@
         });
       }
     </script>
-  <script type="module" src="/index.tsx"></script>
-</body>
+  </body>
 </html>
