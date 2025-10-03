@@ -3,26 +3,26 @@ import React, { useState, useMemo, useEffect } from 'react';
 
 import type { Task, DailyObservation, UpcomingPriorityTask, MonthlyReportData, Seccional, OverdueTask } from './types.ts';
 import { TaskStatus, SECCIONALES_INITIAL, DEFAULT_ADMIN_USER } from './constants.ts';
-import Calendar from './components/Calendar.tsx';
-import DailyTasks from './components/DailyTasks.tsx';
-import AdminDashboard from './components/AdminDashboard.tsx';
-import Header from './components/Header.tsx';
-import AddTaskModal from './components/AddTaskModal.tsx';
-import EditTaskModal from './components/EditTaskModal.tsx';
-import StatsModal from './components/StatsModal.tsx';
-import ConfirmationModal from './components/ConfirmationModal.tsx';
+import Calendar from './components/Calendar';
+import DailyTasks from './components/DailyTasks';
+import AdminDashboard from './components/AdminDashboard';
+import Header from './components/Header';
+import AddTaskModal from './components/AddTaskModal';
+import EditTaskModal from './components/EditTaskModal';
+import StatsModal from './components/StatsModal';
+import ConfirmationModal from './components/ConfirmationModal';
 import { generateConsolidatedSummary, generateMonthlySummary, searchTasksWithAI } from './services/geminiService.ts';
-import Settings from './components/Settings.tsx';
-import CommentModal from './components/CommentModal.tsx';
-import SaveToast from './components/SaveToast.tsx';
+import Settings from './components/Settings';
+import CommentModal from './components/CommentModal';
+import SaveToast from './components/SaveToast';
 import { getCountdownInfo, toLocalDateString } from './utils.ts';
-import LoginScreen from './components/LoginScreen.tsx';
-import OverdueTasksNotification from './components/OverdueTasksNotification.tsx';
-import CancellationReasonModal from './components/CancellationReasonModal.tsx';
-import PasswordModal from './components/PasswordModal.tsx';
-import SetPasswordModal from './components/SetPasswordModal.tsx';
-import SearchModal from './components/SearchModal.tsx';
-import RenameModal from './components/RenameModal.tsx';
+import LoginScreen from './components/LoginScreen';
+import OverdueTasksNotification from './components/OverdueTasksNotification';
+import CancellationReasonModal from './components/CancellationReasonModal';
+import PasswordModal from './components/PasswordModal';
+import SetPasswordModal from './components/SetPasswordModal';
+import SearchModal from './components/SearchModal';
+import RenameModal from './components/RenameModal';
 
 
 const APP_DATA_KEYS = {
